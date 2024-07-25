@@ -6,15 +6,31 @@
     <title>Vue.js Introduction</title>
 
     <!-- VueJS CDN -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+
 </head>
 
 
 <body>
     
     <div id="app">
-
+        <div class="title">{{ title }}</div>
+        <div v-html="titleHTML"></div>
     </div>
+    <!-- <script>
+        // access alert property
+        console.log(app.alert)
+
+        // update a data property value
+        app.alert = "I am a new alert message"
+        console.log(app.alert)
+
+        // access the data object
+        console.log(app._data)
+        console.log(app.$data)
+
+        console.log(app.$options)
+    </script> -->
 
     <!-- add main js file -->
     <script src="./main.js"></script>
